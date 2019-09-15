@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:checked="true"
+        android:icon="@drawable/ic_explore_black_24dp"
+        android:title="explore"
+        android:enabled="true"
+        android:id="@+id/mn_explore"
+        android:orderInCategory="1"
+        app:showAsAction="ifRoom"/>
+
+    <item android:checked="true"
+        android:icon="@drawable/ic_apps_black_24dp"
+        android:title="category"
+        android:enabled="true"
+        android:id="@+id/mn_category"
+        android:orderInCategory="2"
+        app:showAsAction="ifRoom"/>
+
+    <item android:checked="true"
+        android:icon="@drawable/ic_photo_camera_black_24dp"
+        android:title="camera"
+        android:enabled="true"
+        android:id="@+id/mn_camera"
+        android:orderInCategory="3"
+        app:showAsAction="ifRoom"/>
+
+    <item android:checked="true"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="notification"
+        android:enabled="true"
+        android:id="@+id/mn_notification"
+        android:orderInCategory="4"
+        app:showAsAction="ifRoom"/>
+
+    <item android:checked="true"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="person"
+        android:enabled="true"
+        android:id="@+id/mn_person"
+        android:orderInCategory="5"
+        app:showAsAction="ifRoom"/>
+
+</menu>

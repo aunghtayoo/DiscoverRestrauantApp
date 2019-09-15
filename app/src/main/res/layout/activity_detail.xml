@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_text"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/detail_img_bg_height"
+        android:id="@+id/iv_detail_bg"
+        android:scaleType="centerCrop"
+        android:src="@color/colorPrimaryDark"/>
+
+    <ImageView
+        android:layout_width="@dimen/ic_regular_2x"
+        android:layout_height="@dimen/ic_regular_2x"
+        android:id="@+id/ic_back"
+        android:src="@drawable/ic_arrow_back_black_24dp"
+        android:layout_margin="@dimen/margin_xlarge"/>
+
+    <android.support.design.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/detail_card_view_height"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="@dimen/margin_medium"
+        app:cardBackgroundColor="@color/cardview_dark_background"
+        android:layout_margin="@dimen/margin_xlarge">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/vp_detail"
+                android:padding="@dimen/margin_xlarge"
+                android:layout_above="@id/tl_detail"/>
+
+            <android.support.design.widget.TabLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabIndicatorGravity="top"
+                android:backgroundTint="@color/cardview_dark_background"
+                app:tabSelectedTextColor="@color/white_full"
+                app:tabTextColor="@color/secondary_text"
+                app:tabIndicatorColor="@color/white_full"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/tl_detail"/>
+
+        </RelativeLayout>
+
+    </android.support.design.card.MaterialCardView>
+
+</RelativeLayout>

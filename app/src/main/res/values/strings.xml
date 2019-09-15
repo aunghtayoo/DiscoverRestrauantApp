@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DiscoverRestaurantApp</string>
+    <string name="lbl_discover_restaurant">Discover\nRestaurant</string>
+    <string name="lbl_snack_bar_ok">OK</string>
+</resources>

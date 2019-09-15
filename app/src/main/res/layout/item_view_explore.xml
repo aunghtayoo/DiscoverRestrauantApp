@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/main_cardview_height"
+    android:layout_marginTop="@dimen/margin_medium_2"
+    android:layout_marginBottom="@dimen/margin_medium_2"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/margin_medium_2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/iv_background"
+                android:scaleType="centerCrop"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/trending_gradient_shape"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/margin_medium_3">
+
+            <ImageView
+                android:layout_width="@dimen/ic_regular_3x"
+                android:layout_height="@dimen/ic_regular_3x"
+                android:id="@+id/iv_menu"
+                android:padding="@dimen/margin_medium_2"
+                android:background="@drawable/img_shop_circle"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:src="@drawable/store"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="@dimen/ic_regular_3x"
+                android:layout_height="@dimen/ic_regular_3x"
+                android:id="@+id/fab_nav"
+                android:src="@drawable/ic_near_me_black_24dp"
+                android:layout_alignParentRight="true"/>
+
+            <org.mmtextview.components.MMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/iv_menu"
+                android:textStyle="bold"
+                android:id="@+id/tv_name"
+                android:textColor="@color/white_full"
+                android:textSize="@dimen/text_regular_2x"
+                android:text="Mexican Bite"/>
+
+            <org.mmtextview.components.MMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_rating_number"
+                android:layout_below="@id/tv_name"
+                android:layout_toEndOf="@id/iv_menu"
+                android:textColor="@color/white_full"
+                android:textSize="@dimen/text_regular"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginRight="@dimen/margin_small"
+                android:textStyle="bold"
+                android:text="4.0"/>
+
+            <android.support.v7.widget.AppCompatRatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb_stars"
+                android:layout_marginRight="@dimen/margin_small"
+                android:layout_toEndOf="@id/tv_rating_number"
+                android:layout_below="@+id/tv_name"
+                android:numStars="5"
+                android:max="100"
+                android:rating="1"
+                android:progressTint="@color/color_orange"
+                android:progressBackgroundTint="@color/white_full"
+                android:layout_marginTop="@dimen/margin_card_medium"
+                style="@style/Widget.AppCompat.RatingBar.Small"/>
+
+            <org.mmtextview.components.MMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_max_rating"
+                android:layout_below="@+id/tv_name"
+                android:layout_toEndOf="@+id/rb_stars"
+                android:textColor="@color/white_full"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/margin_small"
+                android:textSize="@dimen/text_regular"
+                android:text="(100)"/>
+
+            <org.mmtextview.components.MMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_address"
+                android:layout_below="@+id/tv_max_rating"
+                android:layout_toEndOf="@+id/iv_menu"
+                android:textColor="@color/white_full"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/margin_small"
+                android:textSize="@dimen/text_regular"
+                android:text="Address"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tv_address"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:layout_toEndOf="@+id/iv_menu">
+
+                <org.mmtextview.components.MMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white_full"
+                    android:textStyle="bold"
+                    android:ellipsize="end"
+                    android:id="@+id/tv_desc"
+                    android:textSize="@dimen/text_small"/>
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.design.card.MaterialCardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
